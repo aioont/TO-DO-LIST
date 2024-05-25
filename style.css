@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f2f2e8;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background-color: #fff;
+  max-width: 90%; 
+  width: 800px; 
+  height: 70vh; 
+  border: 5px solid #c3a1ce;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 90%; 
+    height: 80vh; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 10px; 
+  }
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(197, 161, 206, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #611cc0;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid #b3a1ce;
+  background-color: #e3deee;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+
+.todo-footer{
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgb(25, 25, 25);
+color: white;
+font-family: Arial;
+height: 30px;
+padding-top: 30px;
+padding-bottom: 45px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+ color: #fff;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #abcea1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
